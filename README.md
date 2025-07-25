@@ -40,7 +40,7 @@ O **Guardião das Tartaruguinhas** é uma ferramenta de linha de comando que per
 
 O diagrama abaixo ilustra a arquitetura lógica e o fluxo de execução do sistema.
 
-![Fluxograma do Guardião das Tartaruguinhas](./assets/fluxograma.png)
+![Fluxograma do Guardião das Tartaruguinhas](fluxograma.png)
 
 
 ### **4. Estrutura dos Dados (`dados_ninhos.csv`)**
