@@ -8,24 +8,22 @@ Um sistema em Python puro para fortalecer a conservação comunitária de quelô
 ---
 
 ## 📖 Tabela de Conteúdos
-1. [Sobre o Projeto](#-sobre-o-projeto)
-2. [Funcionalidades](#-funcionalidades)
-3. [Como Executar](#-como-executar)
-4. [Fluxograma da Aplicação](#-fluxograma-da-aplicação)
-5. [Estrutura dos Dados](#-estrutura-dos-dados)
-6. [Motivação e Contexto](#-motivação-e-contexto)
-7. [Autor](#-autor)
+1. [Sobre o Projeto](#1-sobre-o-projeto)
+2. [Funcionalidades](#2-funcionalidades)
+3. [Estrutura dos Dados](#3-estrutura-dos-dados)
+4. [Motivação e Contexto](#4-motivação-e-contexto)
+5. [Autor](#5-autor)
 
 
 ---
 
-### 📍 Sobre o Projeto
+### **1. Sobre o Projeto**
 
 O **Guardião das Tartaruguinhas** é uma ferramenta de linha de comando que permite a voluntários de projetos de conservação registrar, consultar, editar e analisar dados sobre ninhos de quelônios. Ele transforma anotações de campo em uma base de dados estruturada e persistente (`dados_ninhos.csv`), sendo projetado para ser robusto, acessível e funcionar sem bibliotecas externas complexas.
 
 **Interface do Programa:**
 
-### ✨ Funcionalidades
+### **2. Funcionalidades**
 
 -   **Menu Interativo:** Navegação guiada por um menu numérico simples, utilizando a estrutura `match...case`.
 -   **Persistência de Dados:** Todos os registros são salvos em um arquivo `.csv`, garantindo que os dados não sejam perdidos.
@@ -38,14 +36,24 @@ O **Guardião das Tartaruguinhas** é uma ferramenta de linha de comando que per
 -   **Validação de Dados:** Previne a entrada de dados inválidos (ex: ovos negativos, status incorreto).
 -   **Análise e Relatórios:** Gera estatísticas e um gráfico de distribuição em modo texto para fácil visualização.
 
-### ▶️ Como Executar
+### **3. Estrutura dos Dados (`dados_ninhos.csv`)**
 
-#### **Pré-requisitos**
-* Python 3.10 ou superior.
+| Coluna              | Tipo de Dado | Descrição                                                       |
+| ------------------- | ------------ | --------------------------------------------------------------- |
+| `id`                | `int`        | Identificador numérico único para o ninho.                      |
+| `regiao`            | `string`     | Nome da praia ou área de monitoramento.                         |
+| `quantidade_ovos`   | `int`        | Número de ovos contados no ninho.                               |
+| `status`            | `string`     | Condição do ninho: "intacto", "ameaçado", ou "danificado".      |
+| `risco`             | `string`     | Nível de risco visual: "🟢" (estável), "🟡" (observação), "🔴" (crítico). |
+| `dias_para_eclosao` | `int`        | Estimativa de dias restantes para a eclosão dos ovos.           |
+| `predadores`        | `boolean`    | Presença de predadores registrada (`True` ou `False`).          |
 
-#### **Método 1: Localmente**
-1. Baixe o arquivo `guardiao.py` (ou o nome que você deu ao script).
-2. No seu terminal, navegue até a pasta do arquivo.
-3. Execute o comando:
-   ```sh
-   python guardiao.py
+
+### **4. Motivação e Contexto**
+Este projeto foi inspirado em iniciativas de conservação reais, como o **Projeto Pé-de-Pincha**, e no contexto da **COP30 em Belém**. A meta é criar uma ponte entre o conhecimento tradicional e a tecnologia acessível, empoderando comunidades locais com ferramentas que elas possam usar de forma autônoma.
+
+### **5. Autor**
+* **João Paulo da Silva Cardoso**
+
+---
+Distribuído sob a Licença MIT.
