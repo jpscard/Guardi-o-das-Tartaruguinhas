@@ -36,7 +36,14 @@ O **Guardião das Tartaruguinhas** é uma ferramenta de linha de comando que per
 -   **Validação de Dados:** Previne a entrada de dados inválidos (ex: ovos negativos, status incorreto).
 -   **Análise e Relatórios:** Gera estatísticas e um gráfico de distribuição em modo texto para fácil visualização.
 
-### **3. Estrutura dos Dados (`dados_ninhos.csv`)**
+### **3. Fluxograma da Aplicação**
+
+O diagrama abaixo ilustra a arquitetura lógica e o fluxo de execução do sistema.
+
+![Fluxograma do Guardião das Tartaruguinhas](./assets/fluxograma.png)
+
+
+### **4. Estrutura dos Dados (`dados_ninhos.csv`)**
 
 | Coluna              | Tipo de Dado | Descrição                                                       |
 | ------------------- | ------------ | --------------------------------------------------------------- |
@@ -49,10 +56,10 @@ O **Guardião das Tartaruguinhas** é uma ferramenta de linha de comando que per
 | `predadores`        | `boolean`    | Presença de predadores registrada (`True` ou `False`).          |
 
 
-### **4. Motivação e Contexto**
+### **5. Motivação e Contexto**
 Este projeto foi inspirado em iniciativas de conservação reais, como o **Projeto Pé-de-Pincha**, e no contexto da **COP30 em Belém**. A meta é criar uma ponte entre o conhecimento tradicional e a tecnologia acessível, empoderando comunidades locais com ferramentas que elas possam usar de forma autônoma.
 
-### **5. Autor**
+### **6. Autor**
 * **João Paulo da Silva Cardoso**
 
 ---
